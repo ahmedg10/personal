@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.eyes-animation {
+  animation: shiftEyes 3s infinite;
+}
+
+@keyframes shiftEyes {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+
 @font-face {
     font-family: 'ServerMono-Regular';
     src: url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/d07f86ea-cba9-4ff3-9f74-d92968910081.woff') format('woff');
